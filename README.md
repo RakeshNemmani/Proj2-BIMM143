@@ -5,11 +5,11 @@ Scientific Question: Can a color identifying program significantly improve the p
 
 Scientific Hypothesis: If the color identifying algorithm is tested, then it should have significantly better performance than chance-50%.
 
-Packages to be installed and their description:
-keras: Keras is a package important in creating artificial neural networks. Part of the TensorFlow Library, it is the most commonly used package for creating DNN or Articial Neural Networks. 
- numpy: Numpy is an important package in Python which is used for scientific computing. This includes using multidimensional arrays, their operations, matrices and linear algebra as well.
-sklearn: Sklearn is an important package in Python often used in machine learning. This package includes important tools for machine and statistical learning like classification, regression, clustering and dimensionality reduction.
- matplotlib: Matplotlib is a package most often used in the creation of visual plots in Python. This package includes many features that can help the user create graphs such as line, scatter, histograms and any other static, animated or interactive visualizations.
+- Packages to be installed and their description:
+1. keras: Keras is a package important in creating artificial neural networks. Part of the TensorFlow Library, it is the most commonly used package for creating DNN or Articial Neural Networks. 
+2. numpy: Numpy is an important package in Python which is used for scientific computing. This includes using multidimensional arrays, their operations, matrices and linear algebra as well.
+3. sklearn: Sklearn is an important package in Python often used in machine learning. This package includes important tools for machine and statistical learning like classification, regression, clustering and dimensionality reduction.
+4. matplotlib: Matplotlib is a package most often used in the creation of visual plots in Python. This package includes many features that can help the user create graphs such as line, scatter, histograms and any other static, animated or interactive visualizations.
 
 Background: Color blindness is one of the most common maladies that occur in humans where they are unable to detect certain colors. This deficiency is often caused by a mutation in the X chromosome, thus it is an inherited trait that affects males more than females. On a positive note however, there have been studies that showed that people with this deficiency can be helped with the use of DNNs, which can be used to identify the color that they are looking at. In this project, I look forward to be using this approach to test whether the DNN produces an accurate result by looking at certain images and identifying their colors. The color data has been sourced from "https://www.color-hex.com/". I chose a couple random colors from the website and downloaded them, making them my dataset. I then introduced this file into my code to see if it can analyze the data.
 
