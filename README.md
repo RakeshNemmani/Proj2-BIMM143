@@ -1,17 +1,20 @@
 # Proj2-BIMM143
 Project 2!
 
-Scientific Question: Can a color identifying program significantly improve the performance of a colorblind person than an untreated colorblind person (control) when they take a color identification test?
+# Scientific Question: 
+Can a color identifying program significantly improve the performance of a colorblind person than an untreated colorblind person (control) when they take a color identification test?
 
-Scientific Hypothesis: If the color identifying algorithm is tested, then it should have significantly better performance than chance-50%.
+# Scientific Hypothesis: 
+If the color identifying algorithm is tested, then it should have significantly better performance than chance-50%.
 
-- Packages to be installed and their description:
+# Packages to be installed and their description:
 1. keras: Keras is a package important in creating artificial neural networks. Part of the TensorFlow Library, it is the most commonly used package for creating DNN or Articial Neural Networks. 
 2. numpy: Numpy is an important package in Python which is used for scientific computing. This includes using multidimensional arrays, their operations, matrices and linear algebra as well.
 3. sklearn: Sklearn is an important package in Python often used in machine learning. This package includes important tools for machine and statistical learning like classification, regression, clustering and dimensionality reduction.
 4. matplotlib: Matplotlib is a package most often used in the creation of visual plots in Python. This package includes many features that can help the user create graphs such as line, scatter, histograms and any other static, animated or interactive visualizations.
 
-Background: Color blindness is one of the most common maladies that occur in humans where they are unable to detect certain colors. This deficiency is often caused by a mutation in the X chromosome, thus it is an inherited trait that affects males more than females. On a positive note however, there have been studies that showed that people with this deficiency can be helped with the use of DNNs, which can be used to identify the color that they are looking at. In this project, I look forward to be using this approach to test whether the DNN produces an accurate result by looking at certain images and identifying their colors. The color data has been sourced from "https://www.color-hex.com/". I chose a couple random colors from the website and downloaded them, making them my dataset. I then introduced this file into my code to see if it can analyze the data.
+# Background: 
+Color blindness is one of the most common maladies that occur in humans where they are unable to detect certain colors. This deficiency is often caused by a mutation in the X chromosome, thus it is an inherited trait that affects males more than females. On a positive note however, there have been studies that showed that people with this deficiency can be helped with the use of DNNs, which can be used to identify the color that they are looking at. In this project, I look forward to be using this approach to test whether the DNN produces an accurate result by looking at certain images and identifying their colors. The color data has been sourced from "https://www.color-hex.com/". I chose a couple random colors from the website and downloaded them, making them my dataset. I then introduced this file into my code to see if it can analyze the data.
 
 ```from keras.models import Sequential,Model,load_model
 from keras.optimizers import SGD
@@ -213,3 +216,5 @@ pyplot.show()
 
 ![image](https://user-images.githubusercontent.com/76504272/121117663-58fb0100-c7cd-11eb-8071-02b7642271b0.png)
 
+# Data Analysis: 
+The image shows that there is a significant difference between the algorithm used and chance, and it is clear that using the algorithm has a higher true positive rate, which shows that the rate of accuracy is very high. This project can be summed up with the statement that just like other DNNs have proved in color blindness and the efficiency of color identifying programs, color identification algorithms have high accuracy and do much better than chance, so this can be a potential source for future aid for color blind individuals!
