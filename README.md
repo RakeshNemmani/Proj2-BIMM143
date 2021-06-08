@@ -28,7 +28,7 @@ import numpy as np
 import keras.backend as K
 ```
 
-The following code below defines the DNN, a DNN is a type of artificial neural network, which uses several layers of neural networks between the input and output layers to imitate animal intelligence. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. 
+The following code below defines the DNN, a DNN is a type of artificial neural network, which uses several layers of neural networks between the input and output layers to imitate animal intelligence. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. This code takes in a file as input for the model with the respective color and outputs the color it is.
 ```def beer_net(num_classes):
     # placeholder for input image
     input_image = Input(shape=(224,224,3))
