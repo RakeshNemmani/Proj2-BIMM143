@@ -16,6 +16,8 @@ If the color identifying algorithm is tested, then it should have significantly 
 # Background: 
 Color blindness is one of the most common maladies that occur in humans where they are unable to detect certain colors. This deficiency is often caused by a mutation in the X chromosome, thus it is an inherited trait that affects males more than females. On a positive note however, there have been studies that showed that people with this deficiency can be helped with the use of DNNs, which can be used to identify the color that they are looking at. In this project, I look forward to be using this approach to test whether the DNN produces an accurate result by looking at certain images and identifying their colors. The color data has been sourced from "https://www.color-hex.com/". I chose a couple random colors from the website and downloaded them, making them my dataset. I then introduced this file into my code to see if it can analyze the data.
 
+# Code:
+
 ```from keras.models import Sequential,Model,load_model
 from keras.optimizers import SGD
 from keras.layers import BatchNormalization, Lambda, Input, Dense, Convolution2D, MaxPooling2D, AveragePooling2D, ZeroPadding2D, Dropout, Flatten, merge, Reshape, Activation
