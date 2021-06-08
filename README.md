@@ -5,7 +5,7 @@ Project 2!
 Can a color identifying program significantly improve the performance of a colorblind person than an untreated colorblind person (control) when they take a color identification test?
 
 # Scientific Hypothesis: 
-If the color identifying algorithm is tested, then it should have significantly better performance than chance-50%.
+If the color identifying algorithm is tested for accuracy along an ROC curve, then it should have significantly better performance than chance-50%.
 
 # Packages to be installed and their description:
 1. keras: Keras is a package important in creating artificial neural networks. Part of the TensorFlow Library, it is the most commonly used package for creating DNN or Articial Neural Networks. 
