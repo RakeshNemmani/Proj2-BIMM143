@@ -13,7 +13,7 @@ sklearn: Sklearn is an important package in Python often used in machine learnin
 
 Background: Color blindness is one of the most common maladies that occur in humans where they are unable to detect certain colors. This deficiency is often caused by a mutation in the X chromosome, thus it is an inherited trait that affects males more than females. On a positive note however, there have been studies that showed that people with this deficiency can be helped with the use of DNNs, which can be used to identify the color that they are looking at. In this project, I look forward to be using this approach to test whether the DNN produces an accurate result by looking at certain images and identifying their colors. The color data has been sourced from "https://www.color-hex.com/". I chose a couple random colors from the website and downloaded them, making them my dataset. I then introduced this file into my code to see if it can analyze the data.
 
-`from keras.models import Sequential,Model,load_model
+```from keras.models import Sequential,Model,load_model
 from keras.optimizers import SGD
 from keras.layers import BatchNormalization, Lambda, Input, Dense, Convolution2D, MaxPooling2D, AveragePooling2D, ZeroPadding2D, Dropout, Flatten, merge, Reshape, Activation
 from keras.layers.merge import Concatenate
@@ -21,9 +21,10 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import ModelCheckpoint
 import numpy as np
 import keras.backend as K
+```
 
-defines the DNN, a DNN is a type of artificial neural network, which uses several layers of neural networks between the input and output layers to imitate animal intelligence. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. 
-def beer_net(num_classes):
+The following code below defines the DNN, a DNN is a type of artificial neural network, which uses several layers of neural networks between the input and output layers to imitate animal intelligence. A neural network is a series of algorithms that endeavors to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. 
+```def beer_net(num_classes):
     # placeholder for input image
     input_image = Input(shape=(224,224,3))
     # ============================================= TOP BRANCH ===================================================
@@ -125,7 +126,9 @@ def beer_net(num_classes):
     model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
     
     return model
-
+```
+The following code below will then describe how I was able to initialize the model for this code. The model is important in this case because it is how I am able to test, train and see the results for how effective the code is in terms of solving the problem of correctly identifying the colors shown.
+```
 img_rows , img_cols = 224,224
 num_classes = 9
 batch_size = 32
@@ -165,8 +168,9 @@ model.fit_generator(
         callbacks=callbacks_list)
 
 model.save('color_model.h5')
-
-# roc curve, a ROC curve or a receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied! In other words, this curve is important in being able to tell the efficacy of a particular algorithm when compared to chance-50%.
+```
+The following below is the ROC curve, which will be used to display results of this project. A ROC curve or a receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied! In other words, this curve is important in being able to tell the efficacy of a particular algorithm when compared to chance-50%.
+```
 from sklearn.datasets import make_classification
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -204,6 +208,8 @@ pyplot.ylabel('True Positive Rate')
 # show the legend
 pyplot.legend()
 # show the plot
-pyplot.show()`
+pyplot.show()
+```
+
 ![image](https://user-images.githubusercontent.com/76504272/121117663-58fb0100-c7cd-11eb-8071-02b7642271b0.png)
 
