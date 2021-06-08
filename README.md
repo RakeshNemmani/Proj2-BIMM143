@@ -2,7 +2,7 @@
 Project 2!
 
 # Scientific Question: 
-Can a color identifying program significantly improve the performance of a colorblind person when they take a color identification test?
+Can a color identifying program significantly improve in accuracy when Deep Neural Networks are used than chance when a color identification test is taken?
 
 # Scientific Hypothesis: 
 If the color identifying algorithm is tested for accuracy along an ROC curve, then it should have significantly better performance than chance-50%.
